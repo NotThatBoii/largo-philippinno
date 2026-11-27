@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c1420">
+  <meta name="description" content="LarGo is PhilippInno's jeepney tracking concept for Metro Cebu. See the commuter app prototype and the planned onboard GPS tracker.">
+  <meta property="og:title" content="LarGo | Know when your jeepney's coming">
+  <meta property="og:description" content="A jeepney tracking app and onboard GPS tracker concept by PhilippInno, built for Metro Cebu.">
+  <meta property="og:type" content="website">
+  <title>LarGo | Know when your jeepney's coming</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23ffd66b'/%3E%3Cpath d='M24 17h8L26 40h17l-2 7H16z' fill='%230c1420'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header shell" id="top">
+    <a class="brand" href="#top" aria-label="LarGo home"><span class="brand-mark" aria-hidden="true">L</span>LarGo</a>
+    <nav aria-label="Main navigation">
+      <a href="#app">The app</a>
+      <a href="#tracker">The tracker</a>
+    </nav>
+    <span class="header-team">By PhilippInno</span>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="headline">
+      <div class="hero-copy shell">
+        <p class="eyebrow"><span class="location-mark" aria-hidden="true"></span> Built for Metro Cebu</p>
+        <h1 id="headline">Know when your<br><em>jeepney's coming.</em></h1>
+        <p class="hero-description">Which jeepney is coming, how far away is it, and is there room? LarGo pairs a commuter app with a planned onboard GPS tracker for Metro Cebu.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#app">Explore the app</a>
+          <a class="button button-secondary" href="#tracker">See the GPS tracker</a>
+        </div>
+      </div>
+
+      <div class="hero-stage shell">
+        <img class="hero-photo" src="cebu-jeepney.jpg" alt="A traditional jeepney in Cebu IT Park" width="1280" height="960" fetchpriority="high">
+        <div class="stage-shade" aria-hidden="true"></div>
+        <div class="stage-caption"><span class="caption-line" aria-hidden="true"></span> Cebu City, Philippines</div>
+        <div class="device-layout">
+          <figure class="phone-figure">
+            <div class="phone" role="img" aria-label="App mockup showing a search for route 13C and a matching jeepney near USC Talamban with an estimated arrival in three minutes and seats available">
+              <div class="phone-ui" aria-hidden="true">
+                <div class="phone-status"><span>9:41</span><span class="status-icons">LTE</span></div>
+                <div class="phone-brand"><span><i class="mini-brand">L</i> LarGo</span><span class="mini-location" title="Metro Cebu">Cebu</span></div>
+                <div class="route-search"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg><span>Find route <strong>13C</strong></span></div><div class="phone-map">
+                  <div class="map-roads"></div>
+                  <span class="map-place">Talamban</span>
+                  <span class="map-trail map-trail-a"></span>
+                  <span class="map-trail map-trail-b"></span>
+                  <span class="map-stop"></span>
+                  <span class="map-vehicle">13C</span>
+                  <span class="map-pickup"></span>
+                  <span class="map-campus">USC Talamban</span>
+                </div>
+                <div class="phone-sheet">
+                  <span class="sheet-handle"></span>
+                  <div class="phone-title">Nearby arrivals</div>
+                  <div class="arrival">
+                    <span class="route-chip">13C</span>
+                    <span><strong>Talamban</strong><small>Seats available</small></span>
+                    <strong class="arrival-time">3 min</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <figcaption>App mockup � Sample data</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="app-section" id="app" aria-labelledby="app-heading">
+      <div class="shell">
+        <div class="section-intro">
+          <p class="eyebrow">The commuter app</p>
+          <h2 id="app-heading">Less guesswork at the stop.</h2>
+          <p>Even when you know your route, you still have to guess when a jeepney will arrive and whether there's room. LarGo puts both answers beside the map.</p>
+        </div>
+        <div class="features">
+          <article class="feature">
+            <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M20 9c0 5-8 11-8 11S4 14 4 9a8 8 0 1 1 16 0Z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
+            <h3>Find your jeepney</h3>
+            <p>Search by route or destination and see nearby jeepneys along the route on the map.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></div>
+            <h3>Check when it'll arrive</h3>
+            <p>Check which rides are approaching your pickup point and how many minutes away they are.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M7 12V7a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v5h4a2 2 0 0 1 2 2v2H7a2 2 0 0 1-2-2v-2M8 16l-1 3m10-3 1 3"/></svg></div>
+            <h3>See if there's room</h3>
+            <p>Check whether a jeepney has seats available, has limited space, or is full before it reaches you.</p>
+          </article>
+        </div>
+        <p class="prototype-note">The current app prototype uses simulated trips, arrival estimates, and seat availability.</p>
+      </div>
+    </section>
+
+    <section class="tracker-section" id="tracker" aria-labelledby="tracker-heading">
+      <div class="shell tracker-layout">
+        <figure class="tracker-figure">
+          <div class="tracker-art" role="img" aria-label="Concept illustration of a LarGo GPS tracker with cellular connectivity">
+            <div class="tracker-device" aria-hidden="true">
+              <div class="tracker-face">
+                <span class="tracker-logo"><i class="mini-brand">L</i> LarGo</span>
+                <span class="tracker-type">Vehicle GPS unit</span>
+                <div class="tracker-lights"><span><i></i>GPS</span><span><i></i>LTE</span></div>
+              </div>
+            </div>
+          </div>
+          <figcaption>Onboard tracker concept</figcaption>
+        </figure>
+        <div class="tracker-copy">
+          <p class="eyebrow">The IoT hardware</p>
+          <h2 id="tracker-heading">It starts on the jeepney.</h2>
+          <p class="tracker-lede">PhilippInno plans to install a GPS unit on each participating jeepney so its position can reach commuters' phones.</p>
+          <ol class="tracker-flow">
+            <li><span class="flow-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2"/><path d="M12 2v3m0 14v3M2 12h3m14 0h3"/></svg></span><div><h3>GPS records the location</h3><p>The onboard unit reads the jeepney's position during the trip.</p></div></li>
+            <li><span class="flow-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 18v-3m5 3v-6m5 6V8m5 10V4"/></svg></span><div><h3>Cellular sends the update</h3><p>The unit sends coordinates over a mobile data connection.</p></div></li>
+            <li><span class="flow-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="7" y="3" width="10" height="18" rx="2"/><path d="M11 17h2"/></svg></span><div><h3>LarGo updates the trip</h3><p>LarGo would move the jeepney marker to its latest position and use its progress along the route to estimate when it will reach your stop.</p></div></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-layout">
+      <div>
+        <a class="brand" href="#top" aria-label="LarGo, back to top"><span class="brand-mark" aria-hidden="true">L</span>LarGo</a>
+        <p>A project by PhilippInno � University of San Carlos</p>
+      </div>
+      <p class="photo-credit">Jeepney photo by <a href="https://commons.wikimedia.org/wiki/File:Traditional_jeepney_in_Cebu_IT_Park_(2025-04-06).jpg">Wide Awake!</a> � <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> � Cropped</p>
+    </div>
+  </footer>
+</body>
+</html>
